@@ -1,35 +1,42 @@
-# Profile + Cat Fact API
+# String Analysis REST API
 
-A simple RESTful API built with **Express.js** and **TypeScript** that returns profile information along with a random cat fact, fetched live from the [Cat Facts API](https://catfact.ninja/fact).
+A RESTful API service that analyzes strings and stores their computed properties including length, palindrome check, character frequency, word count, and more.
 
 ---
 
 ## Features
 
-- `GET /me` endpoint
-- Returns static profile info (from `.env`)
-- Includes a dynamic cat fact (changes every request)
-- Includes current UTC timestamp in ISO 8601 format
-- Graceful error handling if the Cat Facts API fails
-- Clean, modular TypeScript project structure
+For each analyzed string, the API computes and stores the following properties:
+
+- **length**: Number of characters in the string
+- **is_palindrome**: Boolean indicating if the string reads the same forwards and backwards (case-insensitive)
+- **unique_characters**: Count of distinct characters
+- **word_count**: Number of whitespace-separated words
+- **sha256_hash**: SHA-256 hash of the string (used as a unique identifier)
+- **character_frequency_map**: Dictionary mapping each character to its frequency
 
 ---
 
-## Tech Stack
+## Setup Instructions
 
-- **Backend**: Node.js, Express.js
-- **Language**: TypeScript
-- **HTTP Client**: Axios
-
-
----
-
-##  Installation
+- Clone the Repository
 
 ```bash
-git clone https://github.com/dan-codeit/cat-profile-api.git
-cd cat-profile-api
+git clone https://github.com/dan-codeit/string-analysis-api.git
+cd string-analysis-api
+```
 
-# Install dependencies
+- Install Dependencies
+
+```bash
 npm install
 ```
+
+## Dependencies
+
+- express: Web framework
+- crypto: Node built-in module for SHA-256
+- body-parser: For parsing JSON requests
+- uuid or nanoid (optional): For generating fallback IDs
+
+
