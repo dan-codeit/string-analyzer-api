@@ -1,9 +1,9 @@
 {
-  "name": "cat-fact",
+  "name": "string-analyzer-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types": "module",
+  "type": "module",
   "scripts": {
     "dev": "nodemon",
     "build": "rimraf dist && tsc",
@@ -12,7 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "axios": "^1.12.2",
     "cors": "^2.8.5",

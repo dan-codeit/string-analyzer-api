@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import { StringProperties } from "../models/string.model";
+import { StringProperties } from "../models/string.model.js";
 
 export function analyzeString(value: string): StringProperties {
   const normalized = value.toLowerCase().replace(/\s+/g, "");

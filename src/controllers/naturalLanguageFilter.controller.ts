@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { parseNaturalLanguageQuery } from "../utils/naturalLanguageParser";
+import { parseNaturalLanguageQuery } from "../utils/naturalLanguageParser.js";
 import { getAllStrings } from "../services/string.service.js";
 
 /**

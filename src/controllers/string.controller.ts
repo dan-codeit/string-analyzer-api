@@ -4,7 +4,7 @@ import {
   getAllStrings,
   getString,
   deleteString,
-} from "../services/string.service";
+} from "../services/string.service.js";
 
 export function createString(req: Request, res: Response) {
   const { value } = req.body;

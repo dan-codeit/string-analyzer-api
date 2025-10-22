@@ -4,8 +4,8 @@ import {
   getSingleString,
   getFilteredStrings,
   deleteStringHandler,
-} from "../controllers/string.controller";
-import { naturalLanguageFilter } from "../controllers/naturalLanguageFilter.controller";
+} from "../controllers/string.controller.js";
+import { naturalLanguageFilter } from "../controllers/naturalLanguageFilter.controller.js";
 
 const router = Router();
 

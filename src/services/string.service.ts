@@ -1,5 +1,5 @@
-import { StringModel } from "../models/string.model";
-import { analyzeString } from "../utils/stringAnalyzer";
+import { StringModel } from "../models/string.model.js";
+import { analyzeString } from "../utils/stringAnalyzer.js";
 
 const store = new Map<string, StringModel>();
 
